@@ -33,7 +33,20 @@ img {
     width: 100%;
 }
 
-// .btnapinit
+.btn {
+    @include button();
+}
+
+.btn-primary {
+    @include button($white-color, $primary-color);
+}
+
+.text-bold {
+    font-weight: 500;
+}
+.text-muted {
+    color: $gray-color;
+}
 
 
 /////////////////MEDIA QUERY (MEDIUM DEVICES)////////////////////
