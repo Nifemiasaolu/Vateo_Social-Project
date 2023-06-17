@@ -16,17 +16,17 @@ nav {
             border-radius: $border-radius;
             padding: $search-padding;
 
-           & > input[type='search'] {
-            background: transparent;
-            width: 30vw;
-            margin-left: 1rem;
-            color: $dark-color;
-            font-size: 0.9rem;
+            & > input[type="search"] {
+                background: transparent;
+                width: 30vw;
+                margin-left: 1rem;
+                color: $dark-color;
+                font-size: 0.9rem;
 
-            &::placeholder {
-                color: $gray-color;
+                &::placeholder {
+                    color: $gray-color;
+                }
             }
-           }
         }
     }
 
@@ -42,5 +42,14 @@ nav {
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
+}
 
+/////////////////////MEDIA QUERY (SMALL TABS AND MOBILE DEVICES)////////////////////
+
+@media screen and (max-width: 900px) {
+    nav {
+        .search-bar {
+            display: none;
+        }
+    }
 }
