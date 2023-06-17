@@ -1,0 +1,149 @@
+.customize_theme {
+    background: rgba(255, 255, 255, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-size: 0.9rem;
+    display: none;
+
+    .card {
+        background: $white-color;
+        padding: 3rem;
+        border-radius: $card-border-radius;
+        width: 50%;
+
+        .font_size {
+            margin-top: 5rem;
+
+            & > div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: $light-color;
+                padding: $search-padding;
+                border-radius: $card-border-radius;
+
+                .choose_size {
+                    background: $secondary-color;
+                    height: 0.3rem;
+                    width: 100%;
+                    margin: 0 1rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    span {
+                        width: 1rem;
+                        aspect-ratio: 1/1;
+                        background: $secondary-color;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                    .active {
+                        background: $primary-color;
+                    }
+                }
+            }
+        }
+
+        ///////////////// END OF FONT SIZE ///////////////////
+
+        .color {
+            margin-top: 2rem;
+
+            .choose_color {
+                background: $light-color;
+                padding: $search-padding;
+                border-radius: $card-border-radius;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                span {
+                    width: 1.2rem;
+                    aspect-ratio: 1/1;
+                    border-radius: 50%;
+
+                    &:nth-child(1) {
+                        background: hsl(252, 75%, 60%);
+                    }
+                    &:nth-child(2) {
+                        background: hsl(52, 75%, 60%);
+                    }
+                    &:nth-child(3) {
+                        background: hsl(352, 75%, 60%);
+                    }
+                    &:nth-child(4) {
+                        background: hsl(152, 75%, 60%);
+                    }
+                    &:nth-child(5) {
+                        background: hsl(282, 75%, 60%);
+                    }
+                }
+
+                .active {
+                    border: 4px solid $white-color;
+                }
+            }
+        }
+
+        ///////////////// END OF COLOR///////////////////
+
+        .background {
+            margin-top: 2rem;
+
+            .choose_bg {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1.5rem;
+                margin-top: 1rem;
+
+                & > div {
+                    padding: $card-padding;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    border-radius: 0.4rem;
+                    cursor: pointer;
+
+                    &:nth-child(1) {
+                        background: $white-color;
+                        color: $black-color;
+                    }
+                    &:nth-child(2) {
+                        background: hsl(252, 30%, 17%);
+                        color: $white-color;
+                    }
+                    &:nth-child(3) {
+                        background: hsl(252, 30%, 10%);
+                        color: $white-color;
+                    }
+
+                    span {
+                        width: 1.5rem;
+                        aspect-ratio: 1/1;
+                        border: 2px solid $gray-color;
+                        border-radius: 50%;
+                        margin-right: 1rem;
+                    }
+                }
+
+                .active {
+                    border: 2px solid $primary-color;
+                }
+            }
+        }
+
+        ///////////////// END OF BACKGROUND///////////////////
+
+    }
+}
