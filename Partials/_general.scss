@@ -34,7 +34,7 @@ img {
 }
 
 .btn {
-    @include button();
+    @include button($dark-color, $light-color);
 }
 
 .btn-primary {
@@ -53,13 +53,13 @@ img {
 
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .container {
         width: $container-md;
     }
 }
 
-/////////////////////MEDIA QUERY (MEDIUM DEVICES)////////////////////
+/////////////////////MEDIA QUERY (SMALL TABS AND MOBILE DEVICES)////////////////////
 
 @media screen and (max-width: 600px) {
 
