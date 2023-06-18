@@ -39,7 +39,7 @@
         item.addEventListener('click', () => {
             if(item.id === 'messages_notifications') {
                 messageNotificationCount.style.display = 'none';
-                document
+                document.querySelector('.messages').style.box-shadow = '0,0,0,$black-color';
             }
         })
 
