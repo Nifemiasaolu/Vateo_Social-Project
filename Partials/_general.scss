@@ -18,7 +18,7 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
-    color: $dark-color;
+    // color: $dark-color;
     background: $light-color;
     overflow-x: hidden;
 }
@@ -61,8 +61,6 @@ img {
 
 /////////////////////MEDIA QUERY (SMALL TABS AND MOBILE DEVICES)//////////////////
 
-@media screen and (max-width: 600px) {
-
-
-}
+// @media screen and (max-width: 600px) {
+// }
 
