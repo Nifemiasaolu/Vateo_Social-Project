@@ -142,7 +142,7 @@ fontSizes.forEach(size => {
 })
 
 
-// ======================= COLORS =======================
+// ======================= COLORS ======================
 // Change primary colors 
 colorPalette.forEach(color => {
     color.addEventListener('click', () => {
