@@ -17,6 +17,7 @@
         padding: 3rem;
         border-radius: $card-border-radius;
         width: 50%;
+        box-shadow: 0 0 1rem $primary-color;
 
         .font_size {
             margin-top: 5rem;
@@ -87,9 +88,9 @@
                     }
                 }
 
-                .active {
-                    border: 4px solid $white-color;
-                }
+                // .active {
+                    // border: 4px solid $white-color;
+                // }
             }
         }
 
@@ -148,3 +149,32 @@
     }
 }
 ////
+/// 
+/////////////////MEDIA QUERY (MEDIUM DEVICES)////////////////////
+
+@media screen and (max-width: 1200px) {
+    .customize_theme {
+        .card {
+            width: fit-content;
+            margin-top: 3rem;
+        }
+    }
+}
+
+/////////////////////MEDIA QUERY (SMALL TABS AND MOBILE DEVICES)////////////////////
+
+@media screen and (max-width: 900px) {
+    .customize_theme {
+        .card {
+            width: 93%;
+            // margin-top: 3rem;
+            // background: red;
+
+            .background {
+                .choose_bg {
+                    gap: 1rem;
+                }
+            }
+        }
+    }
+}
