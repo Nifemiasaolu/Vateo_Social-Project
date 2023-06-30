@@ -510,9 +510,10 @@ main {
                 // display: none;
                 .messages {
                     position: absolute;
-                    left: -18rem;
+                    left: -35rem;
                     top: 12rem;
                     display: none;
+                    overflow-x: hidden;
                 }
 
                 .friend_requests {
