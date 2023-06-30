@@ -1,24 +1,28 @@
 :root {
-    $primary-color-hue: 252;
-    $light-color: hsl(252, 30%, 95%);
-    $dark-color: hsl(252, 30%, 100%);
-    $gray-color: hsl(252, 15%, 65%);
-    $primary-color: hsl(var(--primary-color-hue), 75%, 60%);
-    $secondary-color: hsl(252, 100%, 90%);
-    $success-color: hsl(120, 95%, 65%);
-    $danger-color: hsl(0, 95%, 65%);
-    $dark-color: hsl(252, 30%, 17%);
-    $black-color: hsl(252, 30%, 10%);
-    $white-color: hsl(0,0%,100%);
-    $container-lg: 80%;
-    $container-md: 96%;
-
-    $border-radius: 2rem;
-    $card-border-radius: 1rem;
-    $btn-padding: 0.6rem 2rem;
-    $search-padding: 0.6rem 1rem;
-    $card-padding: 1rem;
-
-    $sticky-top-left: 5.4rem;
-    $sticky-top-right: -18rem;
+    --primary-hue: 252;
+    --dark-color-lightness: 17%;
+    --light-color-lightness: 95%;
+    --white-color-lightness: 100%;
 }
+
+$light-color: hsl(252, 30%, var(--light-color-lightness));
+$dark-color: hsl(252, 30%, 100%);
+$gray-color: hsl(252, 15%, 65%);
+$primary-color: hsl(var(--primary-hue), 75%, 60%);
+$secondary-color: hsl(252, 100%, 90%);
+$success-color: hsl(120, 95%, 65%);
+$danger-color: hsl(0, 95%, 65%);
+$dark-color: hsl(252, 30%, var(--dark-color-lightness));
+$black-color: hsl(252, 30%, 10%);
+$white-color: hsl(252, 30%,var(--white-color-lightness));
+$container-lg: 80%;
+$container-md: 96%;
+
+$border-radius: 2rem;
+$card-border-radius: 1rem;
+$btn-padding: 0.6rem 2rem;
+$search-padding: 0.6rem 1rem;
+$card-padding: 1rem;
+
+$sticky-top-left: 5.4rem;
+$sticky-top-right: -18rem;
