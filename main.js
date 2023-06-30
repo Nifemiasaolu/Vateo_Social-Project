@@ -58,7 +58,7 @@ menuItems.forEach((item) => {
             noMessagesBoxShadow();
             themeModal.style.display = "none";
             const closeThemeModal = (e) => {
-                if (e.target.classList.contains("customize_theme")) {
+                if (e.target.classList.contains("body")) {
                     themeModal.style.display = "none";
                 }
             };
@@ -68,12 +68,12 @@ menuItems.forEach((item) => {
 });
 
 // Close Notification Messages
-// const closeNotificationMessages = (e) => {
-//     if(e.target.classList.contains('notifications')) {
-//         notificationPopUp.style.display = 'none';
-//     }
-// }
-// notificationPopUp.addEventListener('click', closeNotificationMessages);
+const closeNotificationMessages = (e) => {
+    if(e.target.classList.contains('body')) {
+        notificationPopUp.style.display = 'none';
+    }
+}
+notificationPopUp.addEventListener('click', closeNotificationMessages);
 
 // ======================= MESSAGES =======================
 // Highlight messages card when messages menu item is clicked
