@@ -108,7 +108,7 @@ theme.addEventListener("click", openThemeModal);
 
 // close modal
 const closeThemeModal = (e) => {
-    if (e.target.classList.contains("customize_theme")) {
+    if (e.target.classList.contains("body")) {
         themeModal.style.display = "none";
     }
 };
