@@ -68,12 +68,12 @@ menuItems.forEach((item) => {
 });
 
 // Close Notification Messages
-const closeNotificationMessages = (c) => {
-    if(c.target.classList.contains('body')) {
-        notificationPopUp.style.display = 'none';
-    }
-}
-notificationPopUp.addEventListener('click', closeNotificationMessages);
+// const closeNotificationMessages = (c) => {
+//     if(c.target.classList.contains('body')) {
+//         notificationPopUp.style.display = 'none';
+//     }
+// }
+// notificationPopUp.addEventListener('click', closeNotificationMessages);
 
 // ======================= MESSAGES =======================
 // Highlight messages card when messages menu item is clicked
