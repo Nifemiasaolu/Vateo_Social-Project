@@ -42,18 +42,30 @@ menuItems.forEach((item) => {
         changeActiveItem(); //Call back function to remove 'active' from items
         item.classList.add("active"); //Adds active for each item clicked
 
+       
+
         if (item.id === "notifications") {
             notificationPopUp.style.display = "block";
             notificationCount.style.display = "none";
             messages.style.display = 'none';
             noMessagesBoxShadow();
+            theme.style.display = 'none';
         } else if (item.id === 'messages_notifications') {
             messages.style.display = 'block';
             notificationPopUp.style.display = "none";
+            theme.style.display = 'none';
+        } else if (item.id === 'theme') {
+            const closeThemeModal = (e) => {
+            if (e.target.classList.contains("customize_theme")) {
+                themeModal.style.display = "none";
+            }
+        };
+        themeModal.addEventListener("click", closeThemeModal);
         } else {
             notificationPopUp.style.display = "none";
             messages.style.display = 'none';
             noMessagesBoxShadow();
+            theme.style.display = 'none';
         }
     });
 });
