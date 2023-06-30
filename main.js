@@ -58,7 +58,7 @@ menuItems.forEach((item) => {
             noMessagesBoxShadow();
             themeModal.style.display = "none";
             const closeThemeModal = (e) => {
-                if (e.target.classList.contains("body")) {
+                if (e.target.classList.contains("customize_theme")) {
                     themeModal.style.display = "none";
                 }
             };
@@ -108,7 +108,7 @@ theme.addEventListener("click", openThemeModal);
 
 // close modal
 const closeThemeModal = (e) => {
-    if (e.target.classList.contains("body")) {
+    if (e.target.classList.contains("customize_theme")) {
         themeModal.style.display = "none";
     }
 };
