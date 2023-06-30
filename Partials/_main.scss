@@ -489,6 +489,7 @@ main {
                             position: absolute;
                             left: -20rem;
                             width: 20rem;
+                            z-index: 99;
 
                             &::before {
                                 position: absolute;
@@ -506,7 +507,17 @@ main {
             }
 
             .right {
-                display: none;
+                // display: none;
+                .messages {
+                    position: absolute;
+                    left: -18rem;
+                    top: 12rem;
+                    display: none;
+                }
+
+                .friend_requests {
+                    display: none;
+                }
             }
         }
     }
