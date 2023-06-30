@@ -47,16 +47,16 @@ menuItems.forEach((item) => {
             notificationCount.style.display = "none";
             messages.style.display = "none";
             noMessagesBoxShadow();
-            theme.style.display = "none";
+            themeModal.style.display = "none";
         } else if (item.id === "messages_notifications") {
             messages.style.display = "block";
             notificationPopUp.style.display = "none";
-            theme.style.display = "none";
+            themeModal.style.display = "none";
         }  else {
             notificationPopUp.style.display = "none";
             messages.style.display = "none";
             noMessagesBoxShadow();
-            theme.style.display = "none";
+            // theme.style.display = "none";
             const closeThemeModal = (e) => {
                 if (e.target.classList.contains("customize_theme")) {
                     themeModal.style.display = "none";
