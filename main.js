@@ -68,8 +68,8 @@ menuItems.forEach((item) => {
 });
 
 // Close Notification Messages
-const closeNotificationMessages = (e) => {
-    if(e.target.classList.contains('body')) {
+const closeNotificationMessages = (c) => {
+    if(c.target.classList.contains('body')) {
         notificationPopUp.style.display = 'none';
     }
 }
