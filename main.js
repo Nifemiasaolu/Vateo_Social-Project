@@ -56,7 +56,7 @@ menuItems.forEach((item) => {
             notificationPopUp.style.display = "none";
             messages.style.display = "none";
             noMessagesBoxShadow();
-            // theme.style.display = "none";
+            themeModal.style.display = "none";
             const closeThemeModal = (e) => {
                 if (e.target.classList.contains("customize_theme")) {
                     themeModal.style.display = "none";
