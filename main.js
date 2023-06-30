@@ -2,10 +2,10 @@
 
 // SIDEBAR
 const menuItems = document.querySelectorAll(".menu_item");
-const notifications = document.querySelector('#notifications');
+const notifications = document.querySelector("#notifications");
 const notificationPopUp = document.querySelector(".notification_popup");
 const notificationCount = document.querySelector(".notification_count");
-const body = document.querySelector('body');
+const body = document.querySelector("body");
 
 // MESSAGES
 const messagesNotifications = document.querySelector("#messages_notifications");
@@ -42,30 +42,27 @@ menuItems.forEach((item) => {
         changeActiveItem(); //Call back function to remove 'active' from items
         item.classList.add("active"); //Adds active for each item clicked
 
-       
-
         if (item.id === "notifications") {
             notificationPopUp.style.display = "block";
             notificationCount.style.display = "none";
-            messages.style.display = 'none';
+            messages.style.display = "none";
             noMessagesBoxShadow();
-            theme.style.display = 'none';
-        } else if (item.id === 'messages_notifications') {
-            messages.style.display = 'block';
+            theme.style.display = "none";
+        } else if (item.id === "messages_notifications") {
+            messages.style.display = "block";
             notificationPopUp.style.display = "none";
-            theme.style.display = 'none';
-        } else if (item.id === 'theme') {
+            theme.style.display = "none";
+        }  else {
+            notificationPopUp.style.display = "none";
+            messages.style.display = "none";
+            noMessagesBoxShadow();
+            theme.style.display = "none";
             const closeThemeModal = (e) => {
-            if (e.target.classList.contains("customize_theme")) {
-                themeModal.style.display = "none";
-            }
-        };
-        themeModal.addEventListener("click", closeThemeModal);
-        } else {
-            notificationPopUp.style.display = "none";
-            messages.style.display = 'none';
-            noMessagesBoxShadow();
-            theme.style.display = 'none';
+                if (e.target.classList.contains("customize_theme")) {
+                    themeModal.style.display = "none";
+                }
+            };
+            themeModal.addEventListener("click", closeThemeModal);
         }
     });
 });
@@ -86,7 +83,6 @@ messagesNotifications.addEventListener("click", () => {
     setTimeout(() => {
         messages.style.boxShadow = "none";
     }, 2000);
-    
 });
 
 // Search Messages
@@ -134,24 +130,24 @@ fontSizes.forEach((size) => {
 
         if (size.classList.contains("font_size_1")) {
             fontSize = "10px";
-            root.style.setProperty('$sticky-top-left', '5.4rem');
-            root.style.setProperty('$sticky-top-right', '5.4rem');
+            root.style.setProperty("$sticky-top-left", "5.4rem");
+            root.style.setProperty("$sticky-top-right", "5.4rem");
         } else if (size.classList.contains("font_size_2")) {
             fontSize = "13px";
-            root.style.setProperty('$sticky-top-left', '5.4rem');
-            root.style.setProperty('$sticky-top-right', '-7rem');
+            root.style.setProperty("$sticky-top-left", "5.4rem");
+            root.style.setProperty("$sticky-top-right", "-7rem");
         } else if (size.classList.contains("font_size_3")) {
             fontSize = "16px";
-            root.style.setProperty('$sticky-top-left', '-2rem');
-            root.style.setProperty('$sticky-top-right', '-17rem');
+            root.style.setProperty("$sticky-top-left", "-2rem");
+            root.style.setProperty("$sticky-top-right", "-17rem");
         } else if (size.classList.contains("font_size_4")) {
             fontSize = "19px";
-            root.style.setProperty('$sticky-top-left', '-5rem');
-            root.style.setProperty('$sticky-top-right', '-25rem');
+            root.style.setProperty("$sticky-top-left", "-5rem");
+            root.style.setProperty("$sticky-top-right", "-25rem");
         } else if (size.classList.contains("font_size_5")) {
             fontSize = "22px";
-            root.style.setProperty('$sticky-top-left', '-12rem');
-            root.style.setProperty('$sticky-top-right', '-35rem');
+            root.style.setProperty("$sticky-top-left", "-12rem");
+            root.style.setProperty("$sticky-top-right", "-35rem");
         }
 
         // Change font size of the root html elements
@@ -217,8 +213,8 @@ Bg2.addEventListener("click", () => {
     whiteColorLightness = "20%";
     lightColorLightness = "15%";
 
-    Bg1.style.color = 'black';
-    Bg1.style.backgroundColor = '#fff';
+    Bg1.style.color = "black";
+    Bg1.style.backgroundColor = "#fff";
     // Add active class
     Bg2.classList.add("active");
 
@@ -231,9 +227,9 @@ Bg2.addEventListener("click", () => {
 Bg3.addEventListener("click", () => {
     darkColorLightness = "95%";
     whiteColorLightness = "10%";
-    lightColorLightness = "0%";  
-    Bg1.style.color = 'black';
-    Bg1.style.backgroundColor = '#fff';
+    lightColorLightness = "0%";
+    Bg1.style.color = "black";
+    Bg1.style.backgroundColor = "#fff";
 
     // Add active class
     Bg3.classList.add("active");
