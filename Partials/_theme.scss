@@ -116,17 +116,21 @@
                     border-radius: 0.4rem;
                     cursor: pointer;
 
+                    & > h5 {
+                        font-size: 10px;
+                    }
                     &:nth-child(1) {
                         background: $white-color;
                         color: $black-color;
                     }
                     &:nth-child(2) {
                         background: hsl(252, 30%, 17%);
-                        color: $white-color;
+                        color: #fff;
                     }
                     &:nth-child(3) {
                         background: hsl(252, 30%, 10%);
-                        color: $white-color;
+                        color: #fff;
+                        padding: 0.5rem auto;
                     }
 
                     span {
@@ -173,6 +177,10 @@
             .background {
                 .choose_bg {
                     gap: 1rem;
+
+                    & > h5 {
+                        font-size: 1px;
+                    }
                 }
             }
         }
