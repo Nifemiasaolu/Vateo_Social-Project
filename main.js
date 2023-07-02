@@ -28,7 +28,7 @@ const Bg1 = document.querySelector(".bg_1");
 const Bg2 = document.querySelector(".bg_2");
 const Bg3 = document.querySelector(".bg_3");
 
-// ======================= SIDEBAR ======================
+// ====================== SIDEBAR ======================
 // Remove active class from all Menu Item
 const changeActiveItem = () => {
     menuItems.forEach((item) => {
